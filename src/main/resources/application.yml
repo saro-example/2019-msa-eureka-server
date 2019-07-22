@@ -4,5 +4,16 @@ eureka:
   client:
     registerWithEureka: false
     fetchRegistry: false
+    healthcheck:
+      enabled: true
+#  instance:
+#    registry-fetch-interval-seconds: 1
+#    lease-renewal-interval-in-seconds: 2
+#    lease-expiration-duration-in-seconds: 5
+  server:
+#    renewal-threshold-update-interval-ms: 30000
+    enable-self-preservation: false
+#  server:
+#    response-cache-update-interval-ms: 3000
 
 logging.level.root: DEBUG
